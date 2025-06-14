@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер обратного отсчета</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h1>Таймер обратного отсчета</h1>
+    <input type="datetime-local" id = "dateInput">
+    <button onclick="startCountdown()">Запустить таймер</button>
+    <button onclick="resetCountdown()">Сбросить</button>
+    <div id="countdown">Выберите дату и нажмите кнопку</div>
+
+    <svg width="150" height="150">
+        <circle cx="75" cy="75" r="60" stroke="blue" stroke-width="8" fill="none" 
+            stroke-dasharray="377" stroke-dashoffset="0" id="progressCircle"></circle>
+    </svg>
+    
+    
+
+    <script src="../таймер/script.js"></script>
+</body>
+</html>
